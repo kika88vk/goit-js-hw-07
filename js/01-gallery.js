@@ -35,5 +35,10 @@ function popUpImage(event) {
 
     instance.show()
 
+    document.addEventListener("keydown", event => {
+        if (event.code === "Escape") {
+            instance.close();
+        }
+    });
 }
 
